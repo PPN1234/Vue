@@ -1,7 +1,7 @@
 <template>
 
 <div class="box11">
-<h1>dkg.vue</h1>
+<h1>自己紹介</h1>
 <DKG/>
 
 </div>

@@ -1,8 +1,8 @@
 <template>
   <div class="Login">
-    <h1>ログイン用ページ</h1>
+    <h1>テキストエリアと自己紹介に飛ぶページ</h1>
    <Login/><br>
-   <router-link to="/dkg" class="box11">DKG</router-link> 
+   <router-link to="/dkg" class="box11">自己紹介</router-link> 
   </div>
 </template>
 

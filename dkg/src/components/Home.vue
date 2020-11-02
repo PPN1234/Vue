@@ -1,16 +1,16 @@
 <template>
   <div class="TOP">
-    <p align="center">埼玉県民複数名と北海道の１名によって作られたメンバー</p>
-    <router-link to="/show" class="box1">DKG紹介</router-link>
+    <p align="center">Vue.jsの勉強ページ</p>
+    <router-link to="/show" class="box1">自己紹介</router-link>
     <router-link to="/title" class="box1">活動タイトル</router-link>
     <router-link to="/link" class="box1">各種リンク</router-link>
+    <router-link to="/link2" class="box1">テキストエリアやボタンリンク</router-link>
 
     <div class="box11"> 
-      <p v-bind:class="{child:isChild,'is-active':isActive}">text</p>
-      <p v-bind:style="{color:textColor,backgroundColor:bgColor}">tex1</p>
+      <p v-bind:class="{child:isChild,'is-active':isActive}">アクティブなテキスト</p>
+      <p v-bind:style="{color:textColor,backgroundColor:bgColor}">赤色を指定したテキスト</p>
     </div>
   <button v-on:click="isChild=!isChild">切り替え</button>
-  
     <div v-if="check" :class="{child:isChild,'active':isActive}">
       aaa
     </div>

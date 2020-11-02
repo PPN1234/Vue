@@ -24,8 +24,8 @@ const routes: RouteConfig[] = [
     component: () => import('../views/title.vue'),
   },
   {
-    path: '/login',
-    name: 'Login', 
+    path: '/link2',
+    name: 'Link2', 
    
     component: () => import('../views/login.vue'),
   },

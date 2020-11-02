@@ -1,11 +1,9 @@
 <template>
   <div class="box11">
-    <h1>DustKinokoGamingメンバー紹介</h1>
+    <h1>自己紹介ページ</h1>
     <dkg/>
   </div>
   
-
- 
 </template>
 
 

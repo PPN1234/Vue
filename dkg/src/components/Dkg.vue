@@ -1,17 +1,17 @@
 <template>
 <div class="box11">
-   <h1>DKGメンバー</h1>
+   <h1>経歴</h1>
    <br>
     <div>
       
       <table border="1" align="center">
         
-   <tr><th v-for="but in list" :key="but.id"><button v-on:click="check=!check">{{but.name}}</button>
+   <tr><th v-for="profile in list" :key="profile.id"><button v-on:click="check=!check">{{profile.name}}</button>
    
    <p v-if="check">
-          役職:{{but.job}}<br>
-          名前:{{but.name}}<br>
-          所在地:{{but.map}}
+          役職:{{profile.job}}<br>
+          名前:{{profile.name}}<br>
+          所在地:{{profile.map}}
           </p>
           </th></tr>
         </table>
@@ -32,8 +32,8 @@ export default Vue.extend({
    data: function(){
        return {
   list:[
-    {id:1,job:'リーダー',name:'dustkinoko',map:'北海道'},
-    {id:2,job:'広報',name:'hikarusan',map:'埼玉県'},
+    {id:1,job:'情報系の大学卒業',name:'名前１',map:'埼玉'},
+    {id:2,job:'今はエンジニア見習い',name:'名前２',map:'東京'},
     ],
   check: false,
   bool:'',

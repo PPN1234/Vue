@@ -1,8 +1,8 @@
 <template>
     <div>
-        <h1>For.vue</h1>
-        <p v-bind:class="classObject">text</p>
-        <p v-bind:style="styleObject">Text</p>
+        <h1>Vueの色々試したページ</h1>
+        <p v-bind:class="classObject">普通のテキスト</p>
+        <p v-bind:style="styleObject">スタイルオブジェクトテキスト</p>
         <br>
         <img v-bind="item">
         <br>
@@ -48,14 +48,14 @@ export default Vue.extend({
         return{
         item:{
             src: require("../assets/cat.jpeg"),
-            alt:'商品サムネイル',
+            alt:'猫画像を配列に',
             width:150,
             height:150,
         },
         item2:[
-            {id:1,name:'高村',hp:100},
-            {id:2,name:'大沢',hp:80},
-            {id:3,name:'ガブリエル',hp:120},
+            {id:1,name:'赤スライム',hp:100},
+            {id:2,name:'青スライム',hp:80},
+            {id:3,name:'黄色スライム',hp:120},
         ],
         ifcheck:true,
         radius:50,
