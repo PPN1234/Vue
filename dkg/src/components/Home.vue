@@ -1,10 +1,11 @@
 <template>
   <div class="TOP">
     <p align="center">Vue.jsの勉強ページ</p>
-    <router-link to="/show" class="box1">自己紹介</router-link>
-    <router-link to="/title" class="box1">活動タイトル</router-link>
-    <router-link to="/link" class="box1">各種リンク</router-link>
-    <router-link to="/link2" class="box1">テキストエリアやボタンリンク</router-link>
+    <router-link to="/page1" class="box1">自己紹介</router-link>
+    <router-link to="/page2" class="box1">普段遊んでいるタイトルと勉強しているタイトル</router-link>
+    <router-link to="/page3" class="box1">テキストエリアやボタンリンク</router-link>
+    <router-link to="/page4" class="box1">色々</router-link>
+    <router-link to="/page5" class="box1">色々2</router-link>
 
     <div class="box11"> 
       <p v-bind:class="{child:isChild,'is-active':isActive}">アクティブなテキスト</p>
@@ -24,7 +25,6 @@ export default Vue.extend({
   name: 'Home',
   data: function () {
     return {
-      list:['りんご','いちご'],
       isChild:true,
       isActive:true,
       textColor:'red',

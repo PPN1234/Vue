@@ -11,39 +11,32 @@ const routes: RouteConfig[] = [
     component: Home,
   },
   {
-    path: '/show',
-    name: 'Show',
+    path: '/page1',
+    name: 'Page1',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/about.vue'),
+    component: () => import(/* webpackChunkName: "about" */ '../views/page1.vue'),
   },
   {
-    path: '/title',
-    name: 'Title', 
-    component: () => import('../views/title.vue'),
+    path: '/page2',
+    name: 'Page2', 
+    component: () => import('../views/page2.vue'),
   },
   {
-    path: '/link2',
-    name: 'Link2', 
-   
-    component: () => import('../views/login.vue'),
+    path: '/page3',
+    name: 'Page3', 
+    component: () => import('../views/page3.vue'),
   },
   {
-    path: '/dkg',
-    name: 'DKG',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import('../views/dkg.vue'),
+    path: '/page4',
+    name: 'Page4',
+    component: () => import('../views/page4.vue'),
   },
   {
-    path: '/link',
-    name: 'LINK',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import('../views/for.vue'),
+    path: '/page5',
+    name: 'Page5',
+    component: () => import('../views/page5.vue'),
   },
 ];
 
